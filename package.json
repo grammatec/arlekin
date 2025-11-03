@@ -2,8 +2,10 @@
   "name": "pi-factory",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
-    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+    "dev": "vite",  // Or whatever your dev command is
+  "build": "vite build",  // This bundles for production
+  "preview": "vite preview",
+  "install:all": "npm install"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
