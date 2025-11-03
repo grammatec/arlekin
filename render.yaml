@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: pi-factory-api
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+    rootDir: server
+    buildCommand: npm ci && npx prisma generate && npx prisma db push
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SENDGRID_API_KEY
+        sync: false
