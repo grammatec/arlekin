@@ -1,13 +1,14 @@
 {
   "name": "pi-factory",
   "private": true,
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",  // Or whatever your dev command is
-  "build": "vite build",  // This bundles for production
-  "preview": "vite preview",
-  "install:all": "npm install"
+    "install:all": "npm install",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "vite": "^5.0.0"
   }
 }
