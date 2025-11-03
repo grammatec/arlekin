@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-   "install:all": "npm install",
+  "install:all": "npm install",
   "dev": "vite",
   "build": "vite build",
   "preview": "vite preview"
